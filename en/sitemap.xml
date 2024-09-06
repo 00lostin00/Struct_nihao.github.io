@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-06T20:58:53+08:00</lastmod>
+    <lastmod>2024-09-06T21:21:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -20,8 +20,11 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/p/p0002%E6%B6%88%E9%99%A4%E5%BA%8F%E5%88%97/</loc>
+    <lastmod>2024-09-06T21:21:46+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-09-06T20:58:53+08:00</lastmod>
+    <lastmod>2024-09-06T21:21:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -37,15 +40,6 @@
                 hreflang="en"
                 href="http://localhost:1313/post/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/p/shenmishu/</loc>
-    <lastmod>2024-09-06T20:58:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/make_maps/</loc>
-    <lastmod>2024-09-06T13:39:15+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/my-first-post/</loc>
-    <lastmod>2024-09-06T13:17:52+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
