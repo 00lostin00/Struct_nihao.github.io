@@ -685,7 +685,13 @@ $.next$ 数组求法本质上是子串自己遍历子串&lt;/p&gt;
         <pubDate>Wed, 25 Sep 2024 21:53:01 +0800</pubDate>
         
         <guid>http://localhost:1313/p/%E7%AE%97%E6%B3%95%E5%A4%A7%E7%BA%B2/</guid>
-        <description></description>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;最短路-Dijkstra&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/kmp%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KMP字符串匹配&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/lis%E5%92%8Clcs%E9%97%AE%E9%A2%98/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LIS和LCS问题&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>P0011</title>
