@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59131&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="$KMP$ 算法中的 $.next$ 数组本质就是求最长的相同前后缀的长度。 对于一般的字符串匹配，需要进行朴素的遍历，$kmp$ 算法是保证被遍历的字符串不动，让子串按照$.next$ 数组进行遍历。 主串是 $O(n)$ 遍历的，在遍历时只需要判断是否可以相等，相等的话持续下去，不相等的话跳到 $.next$ 数组对应的位置。 $.next$ 数组求法本质上是子串自己遍历子串\n1 2 3 4 5 6 7 8 9 string s; int j=0;//可以理解为子链上的指针 for(int i=2;i&lt;=length;i++)//第一个不能被本身遍历，要不然就是整个串遍历完了 { while(j&amp;&amp;s[j+1]!=s[i])//j=0就是起始点了不用跳了，另一种是跳的过程中发现可以匹配上，也退出 j=kmp[j];//如果发现j+1无法匹配的时候就跳到.next数组的地方 if(s[j+1]==s[i])j++;//即匹配成功，子链向后移动 kmp[i]=j;//以i点为后缀，可以找到最大的相同的前缀 } ">
 <title>KMP字符串匹配</title>
 
-<link rel='canonical' href='http://localhost:59131/p/kmp%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/'>
+<link rel='canonical' href='http://localhost:1313/p/kmp%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="KMP字符串匹配">
 <meta property='og:description' content="$KMP$ 算法中的 $.next$ 数组本质就是求最长的相同前后缀的长度。 对于一般的字符串匹配，需要进行朴素的遍历，$kmp$ 算法是保证被遍历的字符串不动，让子串按照$.next$ 数组进行遍历。 主串是 $O(n)$ 遍历的，在遍历时只需要判断是否可以相等，相等的话持续下去，不相等的话跳到 $.next$ 数组对应的位置。 $.next$ 数组求法本质上是子串自己遍历子串\n1 2 3 4 5 6 7 8 9 string s; int j=0;//可以理解为子链上的指针 for(int i=2;i&lt;=length;i++)//第一个不能被本身遍历，要不然就是整个串遍历完了 { while(j&amp;&amp;s[j+1]!=s[i])//j=0就是起始点了不用跳了，另一种是跳的过程中发现可以匹配上，也退出 j=kmp[j];//如果发现j+1无法匹配的时候就跳到.next数组的地方 if(s[j+1]==s[i])j++;//即匹配成功，子链向后移动 kmp[i]=j;//以i点为后缀，可以找到最大的相同的前缀 } ">
-<meta property='og:url' content='http://localhost:59131/p/kmp%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/'>
+<meta property='og:url' content='http://localhost:1313/p/kmp%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/'>
 <meta property='og:site_name' content='lost.in&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-25T22:01:06&#43;08:00'/><meta property='article:modified_time' content='2024-09-25T22:01:06&#43;08:00'/>
 <meta name="twitter:title" content="KMP字符串匹配">
@@ -233,11 +233,11 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="http://localhost:59131/en/" >English</option>
+                                    <option value="http://localhost:1313/en/" >English</option>
                                 
-                                    <option value="http://localhost:59131/" selected>中文</option>
+                                    <option value="http://localhost:1313/" selected>中文</option>
                                 
-                                    <option value="http://localhost:59131/ar/" >عربي</option>
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
                                 
                             </select>
                         </li>

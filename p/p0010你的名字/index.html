@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59131&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这个问题一眼看是一个排列组合问题，但是由于限制条件 $k$ 的关系，不能直接通过乘积得到，观察题意发现，求得是对方案数取模，这样如果直接用乘法原理往往需要用到逆元，所以一般这样方案数，就考虑 $dp$。\ndp 状态定义 对于 $dp$ 问题，定义状态往往是最难的，状态的定义是否正确合理则决定了做法是否正确和简洁 ——一个我忘了哪个大佬说的 我开始设定的转态定义是 $dp_{i,j,k,0/1}$ 表示前 $i$ 个位置，放 $j$ 个黑球，以黑球 $(1表示黑球)$ 结尾，连续长度为 $k$ 的状态定义，后来发现状态定义是不正确的，因为发现可能会出现当 $k==3$ ，xxxoooxxx 会被理解为正确状态，所以舍弃。后来考虑 $dp_{i,j,Q,W}$ 表示前 $i$ 个位置，放 $j$ 个黑球，后缀为最大黑球比白球多 $Q$ 个，白球比黑球多 $W$ 个，这个转态定义可以把每种状态都包含进去，而且是正确的。\n状态正确性证明 当每添加一个黑球或白球，它构成的合法方案是由原来合法状态得来的，而它添进去的数的方案也必须合法，所以检验一个方案是否合法只需要检验新构成的方案是否合法即可，而新构成的方案必然造成的是对后缀的改变，那么只需要对后缀进行限制即可。该状态满足，所以状态正确。（感觉证明写的好像在水字数）\n由于 $i,j$ 表示前 $i$ 个位置有 $j$ 个黑球，本质上等价于前 $i+j$ 个位置上放了 $i$ 个黑球，$j$ 个白球，于是转态定义就更新成 $dp_{i,j,Q,W}$ 表示放 $i$ 个黑球，放 $j$ 个白球，后缀为最大黑球比白球多 $Q$ 个，白球比黑球多 $W$ 个\n状态转移 这次状态转移分为两个，一个是递推的转移，另一个是递归的记忆化搜索。\n递推的状态转移 初始转态：$dp_{1,0,1,0}=dp_{0,1,0,1}=1$，分别表示第一个球放入黑球还是白球的情况。\n">
 <title>P0010你的名字</title>
 
-<link rel='canonical' href='http://localhost:59131/p/p0010%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/'>
+<link rel='canonical' href='http://localhost:1313/p/p0010%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="P0010你的名字">
 <meta property='og:description' content="这个问题一眼看是一个排列组合问题，但是由于限制条件 $k$ 的关系，不能直接通过乘积得到，观察题意发现，求得是对方案数取模，这样如果直接用乘法原理往往需要用到逆元，所以一般这样方案数，就考虑 $dp$。\ndp 状态定义 对于 $dp$ 问题，定义状态往往是最难的，状态的定义是否正确合理则决定了做法是否正确和简洁 ——一个我忘了哪个大佬说的 我开始设定的转态定义是 $dp_{i,j,k,0/1}$ 表示前 $i$ 个位置，放 $j$ 个黑球，以黑球 $(1表示黑球)$ 结尾，连续长度为 $k$ 的状态定义，后来发现状态定义是不正确的，因为发现可能会出现当 $k==3$ ，xxxoooxxx 会被理解为正确状态，所以舍弃。后来考虑 $dp_{i,j,Q,W}$ 表示前 $i$ 个位置，放 $j$ 个黑球，后缀为最大黑球比白球多 $Q$ 个，白球比黑球多 $W$ 个，这个转态定义可以把每种状态都包含进去，而且是正确的。\n状态正确性证明 当每添加一个黑球或白球，它构成的合法方案是由原来合法状态得来的，而它添进去的数的方案也必须合法，所以检验一个方案是否合法只需要检验新构成的方案是否合法即可，而新构成的方案必然造成的是对后缀的改变，那么只需要对后缀进行限制即可。该状态满足，所以状态正确。（感觉证明写的好像在水字数）\n由于 $i,j$ 表示前 $i$ 个位置有 $j$ 个黑球，本质上等价于前 $i+j$ 个位置上放了 $i$ 个黑球，$j$ 个白球，于是转态定义就更新成 $dp_{i,j,Q,W}$ 表示放 $i$ 个黑球，放 $j$ 个白球，后缀为最大黑球比白球多 $Q$ 个，白球比黑球多 $W$ 个\n状态转移 这次状态转移分为两个，一个是递推的转移，另一个是递归的记忆化搜索。\n递推的状态转移 初始转态：$dp_{1,0,1,0}=dp_{0,1,0,1}=1$，分别表示第一个球放入黑球还是白球的情况。\n">
-<meta property='og:url' content='http://localhost:59131/p/p0010%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/'>
+<meta property='og:url' content='http://localhost:1313/p/p0010%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97/'>
 <meta property='og:site_name' content='lost.in&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-18T20:59:19&#43;08:00'/><meta property='article:modified_time' content='2024-09-18T20:59:19&#43;08:00'/>
 <meta name="twitter:title" content="P0010你的名字">
@@ -233,11 +233,11 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="http://localhost:59131/en/" >English</option>
+                                    <option value="http://localhost:1313/en/" >English</option>
                                 
-                                    <option value="http://localhost:59131/" selected>中文</option>
+                                    <option value="http://localhost:1313/" selected>中文</option>
                                 
-                                    <option value="http://localhost:59131/ar/" >عربي</option>
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
                                 
                             </select>
                         </li>

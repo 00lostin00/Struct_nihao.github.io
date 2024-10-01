@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=59131&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 嗯！ 题目有P3371 【模板】单源最短路径（弱化版），P4779 【模板】单源最短路径（标准版）。\n之后还有个Dijkstra的反复横跳的大水题P4943（哈利与罗恩的奇妙冒险）。\n还是分析一下这个算法吧。\n这边说一下我不会画电子版的图所以就看我的语文功底好不好吧。\n存在二维的最短路小红走矩阵)\n建图 对于一个图，首先得确定拿什么方式来建图和存图。\n刚开始可能会拿邻接矩阵来搞（然后就发现“茫茫世间，尽是大漠一片”）\n看过深入浅出的可能会拿vector数组来存，但是不方便。\n还有拿链式表，还有拿前向星的，这两个都很好就是各自都有互补的缺点，于是乎就有了“链式前向星”。\n关于前向星的思路我大概叙述一下，网上有很多的讲解比我的都好。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ">
 <title>最短路 Dijkstra</title>
 
-<link rel='canonical' href='http://localhost:59131/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/'>
+<link rel='canonical' href='http://localhost:1313/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="最短路 Dijkstra">
 <meta property='og:description' content=" 嗯！ 题目有P3371 【模板】单源最短路径（弱化版），P4779 【模板】单源最短路径（标准版）。\n之后还有个Dijkstra的反复横跳的大水题P4943（哈利与罗恩的奇妙冒险）。\n还是分析一下这个算法吧。\n这边说一下我不会画电子版的图所以就看我的语文功底好不好吧。\n存在二维的最短路小红走矩阵)\n建图 对于一个图，首先得确定拿什么方式来建图和存图。\n刚开始可能会拿邻接矩阵来搞（然后就发现“茫茫世间，尽是大漠一片”）\n看过深入浅出的可能会拿vector数组来存，但是不方便。\n还有拿链式表，还有拿前向星的，这两个都很好就是各自都有互补的缺点，于是乎就有了“链式前向星”。\n关于前向星的思路我大概叙述一下，网上有很多的讲解比我的都好。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 ">
-<meta property='og:url' content='http://localhost:59131/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/'>
+<meta property='og:url' content='http://localhost:1313/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/'>
 <meta property='og:site_name' content='lost.in&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-25T21:54:41&#43;08:00'/><meta property='article:modified_time' content='2024-09-25T21:54:41&#43;08:00'/>
 <meta name="twitter:title" content="最短路 Dijkstra">
@@ -233,11 +233,11 @@
 
                             <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
                                 
-                                    <option value="http://localhost:59131/en/" >English</option>
+                                    <option value="http://localhost:1313/en/" >English</option>
                                 
-                                    <option value="http://localhost:59131/" selected>中文</option>
+                                    <option value="http://localhost:1313/" selected>中文</option>
                                 
-                                    <option value="http://localhost:59131/ar/" >عربي</option>
+                                    <option value="http://localhost:1313/ar/" >عربي</option>
                                 
                             </select>
                         </li>
