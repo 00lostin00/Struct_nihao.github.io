@@ -505,7 +505,13 @@ $$
         <pubDate>Tue, 01 Oct 2024 16:51:20 +0800</pubDate>
         
         <guid>http://localhost:1313/p/%E4%BA%8C%E5%88%86/</guid>
-        <description>&lt;p&gt;二分是什么概念呢，举个例子，比如你在心里想一个 $1000$ 以内的正整数，让我猜，我每次猜一个数，你需要回答大了还是小了，这样，我可以做到最多 $10$ 次我就可以猜到这个数字是多少。
+        <description>&lt;h1 id=&#34;定义&#34;&gt;定义
+&lt;/h1&gt;&lt;p&gt;二分查找（英语：&lt;strong&gt;binary search&lt;/strong&gt;），也称折半搜索（英语：&lt;strong&gt;half-interval search&lt;/strong&gt;）、对数搜索（英语：&lt;strong&gt;logarithmic search&lt;/strong&gt;），是用来在一个有序数组中查找某一元素的算法。&lt;/p&gt;
+&lt;h1 id=&#34;过程&#34;&gt;过程
+&lt;/h1&gt;&lt;p&gt;以在一个升序数组中查找一个数为例。&lt;/p&gt;
+&lt;p&gt;它每次考察数组当前部分的中间元素，如果中间元素刚好是要找的，就结束搜索过程；如果中间元素小于所查找的值，那么左侧的只会更小，不会有所查找的元素，只需到右侧查找；如果中间元素大于所查找的值同理，只需到左侧查找。&lt;/p&gt;
+&lt;h2 id=&#34;示例概念&#34;&gt;示例概念
+&lt;/h2&gt;&lt;p&gt;二分是什么概念呢，举个例子，比如你在心里想一个 $1000$ 以内的正整数，让我猜，我每次猜一个数，你需要回答大了还是小了，这样，我可以做到最多 $10$ 次我就可以猜到这个数字是多少。
 它的猜数路线是这样的，比如你猜的一个数是 $147$ ，我第一次猜 $500$ ，发现是大了，那么下次我猜的范围就是 $1-499$ ，我再猜 $250$ ，那么下次范围就是 $1-249$ ，再猜 $125$ ，下次范围是 $126-149$ ，再猜 $138$ ，下次范围 $139-149$ ，再猜 $144$ ，下次范围就是 $145-149$ ，再猜 $147$ ，这样就猜中了，只用了 $6$ 次就出结果了。换成 $1000$ 以内的任何数都是这样，都可以保证在 $10$ 次以内猜中。倘若一个个的试探的话，最坏可能会 $1000$ 次才能猜出来结果。这样对比二分的效率就来了，对应到代码上：&lt;/p&gt;
 &lt;h2 id=&#34;非二分&#34;&gt;非二分
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -576,6 +582,11 @@ $$
 &lt;/h2&gt;&lt;p&gt;观察上个例子，为什么二分可以比一个个查询的速度快，其实就是它舍弃了一些不用查的数据，而且可以保证这部分数据绝对不会在答案中，而如何可以保证我们舍弃的数据绝对不会被查到，所以需要满足&lt;strong&gt;单调性&lt;/strong&gt;，对于这个猜数问题它满足的是数据的单调性，还有一种单调性是状态决策的单调性（即答案的单调性），&lt;a class=&#34;link&#34; href=&#34;http://www.djtu.com.cn/problem/P0003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;例题：P0003 拍照分组&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;当一个&lt;strong&gt;状态的决策过程或者序列满足单调性&lt;/strong&gt;它往往可以考虑使用二分来解决。&lt;/p&gt;
+&lt;p&gt;STL 形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lower_bound(a,a+n,x)-a; 表示在 $a$ 数组中找到第一个大于等于 $x$ 数的位置。&lt;/li&gt;
+&lt;li&gt;upper_bound(a,a+n,x)-a; 表示在 $a$ 数组中找到第一个大于 $x$ 数的位置。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;参考模版&#34;&gt;参考模版
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
