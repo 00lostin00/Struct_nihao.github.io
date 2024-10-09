@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-02T19:32:47+08:00</lastmod>
+    <lastmod>2024-10-09T22:29:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,11 +20,11 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/p/p0008%E7%BB%84%E8%B5%9B%E9%A2%98/</loc>
-    <lastmod>2024-10-02T19:32:47+08:00</lastmod>
+    <loc>http://localhost:1313/p/acm%E6%A8%A1%E6%8B%9F%E8%B5%9B%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2024-10-09T22:29:45+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-10-02T19:32:47+08:00</lastmod>
+    <lastmod>2024-10-09T22:29:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
@@ -35,6 +35,18 @@
                 hreflang="zh-cn"
                 href="http://localhost:1313/post/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/p/%E5%A5%96%E5%AD%A6%E9%87%91/</loc>
+    <lastmod>2024-10-09T22:29:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/%E4%B8%8D%E7%A9%BA%E7%99%BD%E7%9A%84%E7%94%BB%E5%B8%83/</loc>
+    <lastmod>2024-10-09T22:28:36+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/%E5%9B%9E%E6%96%87/</loc>
+    <lastmod>2024-10-09T22:02:44+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/p0008%E7%BB%84%E8%B5%9B%E9%A2%98/</loc>
+    <lastmod>2024-10-02T19:32:47+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/p0004%E5%89%8D%E7%BC%80%E5%B9%B3%E6%96%B9%E5%92%8C/</loc>
     <lastmod>2024-10-01T22:09:43+08:00</lastmod>
