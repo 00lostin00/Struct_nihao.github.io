@@ -303,6 +303,22 @@
     <li><a href="#定义访问修改元素">定义/访问/修改元素</a></li>
     <li><a href="#例题讲解">例题讲解：</a></li>
   </ol>
+
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#如何组织程序">如何组织程序？</a></li>
+        <li><a href="#为什么要学习函数">为什么要学习函数？</a></li>
+        <li><a href="#创建并使用函数">创建并使用函数</a>
+          <ol>
+            <li><a href="#函数原型">函数原型</a></li>
+            <li><a href="#函数调用">函数调用</a></li>
+            <li><a href="#函数定义">函数定义</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
 </nav>
         </div>
     </section>
@@ -584,7 +600,106 @@
 <p>这样的好处是可以使用尽可能相同或者相近的变量去描述一个物品。比如说 <code>Object</code> 里有 <code>value</code> 这个成员变量；我们还可以定义一个 <code>Car</code> 结构体，同时也拥有 <code>value</code> 这个成员；如果不使用结构体，或许我们就需要定义 <code>valueOfObject[],valueOfCar[]</code> 等不同名称的数组来区分。</p>
 <h2 id="例题讲解">例题讲解：
 </h2><h1 id="函数">函数
-</h1>
+</h1><h3 id="如何组织程序">如何组织程序？
+</h3><p>C的设计思想是，把函数用作构建块。</p>
+<p>函数（function）是完成特定任务的独立程序单元</p>
+<h3 id="为什么要学习函数">为什么要学习函数？
+</h3><p>使用函数可以省去编写重复代码的差事。</p>
+<p>提高代码可读性。</p>
+<h3 id="创建并使用函数">创建并使用函数
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">PrintText</span><span class="p">(</span><span class="n">string</span> <span class="n">text</span><span class="p">);</span>  <span class="c1">// 函数原型
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">PrintText</span><span class="p">();</span> <span class="c1">// 函数调用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">PrintText</span><span class="p">(</span><span class="n">string</span> <span class="n">text</span><span class="p">)</span> <span class="c1">// 函数定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">text</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="函数原型">函数原型
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">PrintText</span><span class="p">(</span><span class="n">string</span> <span class="n">text</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>告诉编译器函数 <em><strong>PrintText</strong></em> 的类型，一般来说</p>
+<p>其中 <em><strong>void</strong></em> 为<strong>函数类型</strong>，表明函数没有返回值。</p>
+<p>括号中的代码 <em><strong>string text</strong></em> 表明该函数的要输入一个 <em><strong>string类</strong></em> 的变量text。</p>
+<h4 id="函数调用">函数调用
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">PrintText</span><span class="p">();</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>表明在此处实行函数</p>
+<p>当计算机执行到该行时，会找到这个函数的定义并执行其中内容，实行完后回到主调函数（例子中为main（））继续进行下一行。</p>
+<h4 id="函数定义">函数定义
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">PrintText</span><span class="p">(</span><span class="n">string</span> <span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">text</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>定义函数要干什么</p>
+<p>其中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">PrintText</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>为<strong>函数头</strong>。</p>
+<p>其余为<strong>函数体</strong>。</p>
+<p>需要注意，定义函数时的函数头后面<strong>没有分号</strong>，以表明此处在定义函数而不是调用或者声明函数。</p>
+<p>�����������������������������������������������������������������������������������������������������������������������</p>
+
 </section>
 
 
