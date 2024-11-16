@@ -294,9 +294,9 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;PrintText&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;告诉编译器函数&lt;em&gt;&lt;strong&gt;PrintText&lt;/strong&gt;&lt;/em&gt;的类型，一般来说&lt;/p&gt;
-&lt;p&gt;其中&lt;em&gt;&lt;strong&gt;void&lt;/strong&gt;&lt;/em&gt;为&lt;strong&gt;函数类型&lt;/strong&gt;，表明函数没有返回值。&lt;/p&gt;
-&lt;p&gt;括号中的代码&lt;em&gt;&lt;strong&gt;string text&lt;/strong&gt;&lt;/em&gt;表明该函数的要输入一个&lt;em&gt;&lt;strong&gt;string类&lt;/strong&gt;&lt;/em&gt;的变量text。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;告诉编译器函数 &lt;em&gt;&lt;strong&gt;PrintText&lt;/strong&gt;&lt;/em&gt; 的类型，一般来说&lt;/p&gt;
+&lt;p&gt;其中 &lt;em&gt;&lt;strong&gt;void&lt;/strong&gt;&lt;/em&gt; 为&lt;strong&gt;函数类型&lt;/strong&gt;，表明函数没有返回值。&lt;/p&gt;
+&lt;p&gt;括号中的代码 &lt;em&gt;&lt;strong&gt;string text&lt;/strong&gt;&lt;/em&gt; 表明该函数的要输入一个 &lt;em&gt;&lt;strong&gt;string类&lt;/strong&gt;&lt;/em&gt; 的变量text。&lt;/p&gt;
 &lt;h4 id=&#34;函数调用&#34;&gt;函数调用
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3408,6 +3408,8 @@ $.next$ 数组求法本质上是子串自己遍历子串&lt;/p&gt;
         <guid>http://localhost:1313/p/%E7%AE%97%E6%B3%95%E5%A4%A7%E7%BA%B2/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E5%BE%AA%E7%8E%AF%E5%92%8C%E6%95%B0%E7%BB%84/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;循环与数组&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%93%E6%9E%84%E4%BD%93%E5%87%BD%E6%95%B0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;字符串结构体函数&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E4%BA%8C%E5%88%86/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;二分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -5064,18 +5066,18 @@ $dp_{p_i}=min(dp_{p_{i-1}}+b_{p_{i}-1}-b_{p_{}i-1},a_{p_i}+sum,a_{p_i-1}+sum-c_{
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
-	width=&#34;667&#34;
-	height=&#34;1000&#34;
-	srcset=&#34;http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13768363498926278726.jpg 480w, http://localhost:1313/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu13380208884366868750.jpg 1024w&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/test-chinese/1.jpg&#34;
+	width=&#34;1083&#34;
+	height=&#34;891&#34;
+	srcset=&#34;http://localhost:1313/p/test-chinese/1_hu16246982784193733553.jpg 480w, http://localhost:1313/p/test-chinese/1_hu8162004202788420093.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;66&#34;
-		data-flex-basis=&#34;160px&#34;
+		data-flex-grow=&#34;121&#34;
+		data-flex-basis=&#34;291px&#34;
 	
 &gt;  &lt;img src=&#34;http://localhost:1313/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
