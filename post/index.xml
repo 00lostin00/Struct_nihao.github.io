@@ -60,7 +60,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;而时间复杂度的单位我们往往可以使用 $O$ 这个符合来表示，以上四个 $for$ 循环的时间复杂度为$O(10),O(n),O(n/2),O(n*m)$。我们可以把这里面的时间复杂度理解为一个 $f(x)$ 的函数，我们一般会只考虑最高次数项，其余项忽略不计（常数项也忽略不计）。&lt;/p&gt;
-&lt;p&gt;把以上四个 $for$ 循环当做一个程序，那个它是时间复杂度就是 $O(10+n+n/2+n&lt;em&gt;m)$ ，忽略低次项，只考虑最高次项，即时间复杂度为 $O(n&lt;/em&gt;m)$ 。&lt;/p&gt;
+&lt;p&gt;把以上四个 $for$ 循环当做一个程序，那个它是时间复杂度就是 $O(10+n+n/2+nm)$。忽略低次项，只考虑最高次项，即时间复杂度为 $O(nm)$ 。&lt;/p&gt;
 &lt;p&gt;同样我们往往也会把最高次项的系数忽略掉，如 $O(n/2)$ 我们往往认为时间复杂度为 $O(n)$ 。&lt;/p&gt;
 &lt;h3 id=&#34;for-example&#34;&gt;for example
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -4239,6 +4239,8 @@ $.next$ 数组求法本质上是子串自己遍历子串&lt;/p&gt;
     &gt;循环与数组&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%93%E6%9E%84%E4%BD%93%E5%87%BD%E6%95%B0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;字符串结构体函数&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%e6%8e%92%e5%ba%8f%e5%92%8c%e9%80%92%e5%bd%92&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;排序和递归&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E4%BA%8C%E5%88%86/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;二分&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://00lostin00.github.io/p/%E6%9C%80%E7%9F%AD%E8%B7%AF-dijkstra/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

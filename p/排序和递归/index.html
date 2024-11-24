@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="冒泡，选择，插入，快排，归并，桶排， 先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化一个方面。\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
 <title>排序和递归</title>
 
 <link rel='canonical' href='http://localhost:1313/p/%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%92%E5%BD%92/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="排序和递归">
-<meta property='og:description' content="冒泡，选择，插入，快排，归并，桶排， 先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
+<meta property='og:description' content="先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化一个方面。\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
 <meta property='og:url' content='http://localhost:1313/p/%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%92%E5%BD%92/'>
 <meta property='og:site_name' content='lost.in&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-23T18:26:42&#43;08:00'/><meta property='article:modified_time' content='2024-11-23T18:26:42&#43;08:00'/>
 <meta name="twitter:title" content="排序和递归">
-<meta name="twitter:description" content="冒泡，选择，插入，快排，归并，桶排， 先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
+<meta name="twitter:description" content="先引入一个概念，时间复杂度 and csdn时间复杂度。 时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化一个方面。\n时间复杂度定义： 衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即\u00a0时间复杂度。\n用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注循环和递归的时间复杂度。(后期有时间专门写个时间复杂度定义的轮子)\nfor examle 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -384,10 +384,9 @@
     <section class="article-content">
     
     
-    <p>冒泡，选择，插入，快排，归并，桶排，
-先引入一个概念，<a class="link" href="https://oi.wiki/basic/complexity/"  target="_blank" rel="noopener"
+    <p>先引入一个概念，<a class="link" href="https://oi.wiki/basic/complexity/"  target="_blank" rel="noopener"
     >时间复杂度</a> and <a class="link" href="" >csdn时间复杂度</a>。
-时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化</p>
+时间复杂度是衡量一个算法优秀的最重要的标准之一，也往往是我们在编写一个程序需要优化一个方面。</p>
 <h2 id="时间复杂度定义">时间复杂度定义：
 </h2><p>衡量一个算法的快慢，一定要考虑数据规模的大小。所谓数据规模，一般指输入的数字个数、输入中给出的图的点数与边数等等。一般来说，数据规模越大，算法的用时就越长。而在算法竞赛中，我们衡量一个算法的效率时，最重要的不是看它在某个数据规模下的用时，而是看它的用时随数据规模而增长的趋势，即 <strong>时间复杂度</strong>。</p>
 <p>用人话来说就是，程序中的语句执行次数，而在算法竞赛中，我们往往只关注<strong>循环和递归</strong>的时间复杂度。<del>(后期有时间专门写个时间复杂度定义的轮子)</del></p>
@@ -479,7 +478,7 @@
 </span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">min_v</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="n">min_v</span><span class="o">=</span><span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">min_v</span><span class="p">])</span><span class="n">min_v</span><span class="o">=</span><span class="n">j</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="n">swap</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">a</span><span class="p">[</span><span class="n">min_v</span><span class="p">]);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -938,7 +937,9 @@ F(5)
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>自定义排序可以很复杂，配合上结构体可以完成很多的操作，很重要。</p>
-<h1 id="码字不易完结撒花">码字不易，完结撒花！
+<h1 id="视频httpswwwbilibilicomvideobv12ybxypevzspm_id_from33399900vd_source560e5d0bc2a53cf71880ff76bd15e57f"><a class="link" href="https://www.bilibili.com/video/BV12yBxYpEvZ/?spm_id_from=333.999.0.0&amp;vd_source=560e5d0bc2a53cf71880ff76bd15e57f"  target="_blank" rel="noopener"
+    >视频</a>
+</h1><h1 id="码字不易完结撒花">码字不易，完结撒花！
 </h1>
 </section>
 
